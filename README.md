@@ -1,5 +1,5 @@
 # DontScream
-Deanonymizaton tool based on telegram bots.
+### Deanonymizaton tool based on telegram bots.
 ![](https://github.com/The361/DontScream/blob/main/banner.jpg)
 ## Installaton
 - download tool from github```git clone https://github.com/The361/DontScream.git```
