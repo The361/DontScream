@@ -2,7 +2,7 @@
 ### Deanonymizaton tool based on telegram bots.
 ![](https://github.com/The361/DontScream/blob/main/banner.jpg)
 ## Installaton
-- download tool from github```git clone https://github.com/The361/DontScream.git```
+- download tool from github ```git clone https://github.com/The361/DontScream.git```
 - install requirements ```pip install -r requirements.txt```
 - ***DONE***
 ## Usage
