@@ -1,7 +1,8 @@
 from rich.console import Console
 from rich.panel import Panel
 from rich import box
-from os import system, listdir
+from os import system, listdir, mkdir
+from os.path import exists
 from telebot import types
 from sys import exit
 import telebot
@@ -123,6 +124,10 @@ logo = '''
 :: : :     :: :: :   :   : :  : :: ::    :   : :   :      :  for you :)
 '''.strip()
 
+if "bots/".exists():
+    pass
+else:
+    mkdir(bots)
 
 system('cls')
 console.print(logo, style='red1')
