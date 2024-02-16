@@ -2,7 +2,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich import box
 from os import system, listdir, mkdir
-from os.path import exists
+from os.path import exists as pathExists
 from telebot import types
 from sys import exit
 import telebot
@@ -107,10 +107,10 @@ logo = '''
 !@!  @!@  !@!  @!@  !@!!@!@!         !@!          
 @!@  !@!  @!@  !@!  @!@ !!@!         @!!          
 !@!  !!!  !@!  !!!  !@!  !!!         !!!                
-!!:  !!!  !!:  !!!  !!:  !!!         !!:  [magenta]+---------------+[/]                    
-:!:  !:!  :!:  !:!  :!:  !:!         :!:  [magenta]|   by The361   |[/]                      
- :::: ::  ::::: ::   ::   ::          ::  [magenta]|t.me/the361soft|[/]   	             
-:: :  :    : :  :   ::    :           :   [magenta]+---------------+[/]                      
+!!:  !!!  !!:  !!!  !!:  !!!         !!:  [magenta]+--------------------+[/]                    
+:!:  !:!  :!:  !:!  :!:  !:!         :!:  [magenta]|      by The361     |[/]                      
+ :::: ::  ::::: ::   ::   ::          ::  [magenta]| Telegram: @the_361 |[/]   	             
+:: :  :    : :  :   ::    :           :   [magenta]+--------------------+[/]                      
 
  @@@@@@    @@@@@@@  @@@@@@@   @@@@@@@@   @@@@@@   @@@@@@@@@@   
 @@@@@@@   @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@@@@  
@@ -124,7 +124,7 @@ logo = '''
 :: : :     :: :: :   :   : :  : :: ::    :   : :   :      :  for you :)
 '''.strip()
 
-if "bots/".exists():
+if pathExists("bots\\"):
     pass
 else:
     mkdir(bots)
