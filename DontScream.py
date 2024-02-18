@@ -127,7 +127,7 @@ logo = '''
 if pathExists("bots\\"):
     pass
 else:
-    mkdir(bots)
+    mkdir("bots")
 
 system('cls')
 console.print(logo, style='red1')
